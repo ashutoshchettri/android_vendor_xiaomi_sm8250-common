@@ -9,14 +9,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/sm8250-common/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/sm8250-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
-    vendor/xiaomi/sm8250-common/proprietary/system/lib/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/libldacBT_abr.so \
-    vendor/xiaomi/sm8250-common/proprietary/system/lib/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/libldacBT_enc.so \
-    vendor/xiaomi/sm8250-common/proprietary/system/lib/liblhdc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/liblhdc.so \
-    vendor/xiaomi/sm8250-common/proprietary/system/lib/liblhdcBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib/liblhdcBT_enc.so \
-    vendor/xiaomi/sm8250-common/proprietary/system/lib64/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_abr.so \
-    vendor/xiaomi/sm8250-common/proprietary/system/lib64/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/libldacBT_enc.so \
-    vendor/xiaomi/sm8250-common/proprietary/system/lib64/liblhdc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/liblhdc.so \
-    vendor/xiaomi/sm8250-common/proprietary/system/lib64/liblhdcBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/system/lib64/liblhdcBT_enc.so \
+    vendor/xiaomi/sm8250-common/proprietary/system/bin/chargeonlymode:$(TARGET_COPY_OUT_SYSTEM)/bin/chargeonlymode \
+    vendor/xiaomi/sm8250-common/proprietary/system/lib/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libldacBT_abr.so \
+    vendor/xiaomi/sm8250-common/proprietary/system/lib/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libldacBT_enc.so \
+    vendor/xiaomi/sm8250-common/proprietary/system/lib/liblhdc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/liblhdc.so \
+    vendor/xiaomi/sm8250-common/proprietary/system/lib/liblhdcBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/liblhdcBT_enc.so \
+    vendor/xiaomi/sm8250-common/proprietary/system/lib64/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libldacBT_abr.so \
+    vendor/xiaomi/sm8250-common/proprietary/system/lib64/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libldacBT_enc.so \
+    vendor/xiaomi/sm8250-common/proprietary/system/lib64/liblhdc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblhdc.so \
+    vendor/xiaomi/sm8250-common/proprietary/system/lib64/liblhdcBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblhdcBT_enc.so \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/sm8250-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
@@ -94,6 +95,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/mi_thermald:$(TARGET_COPY_OUT_VENDOR)/bin/mi_thermald \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/mlipayd@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd@1.1 \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/nv_mac:$(TARGET_COPY_OUT_VENDOR)/bin/nv_mac \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
@@ -119,34 +121,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/perf/thermalboost.conf:$(TARGET_OUT_VENDOR)/etc/perf/thermalboost.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_OUT_VENDOR)/etc/thermal-camera.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-class0.conf:$(TARGET_OUT_VENDOR)/etc/thermal-class0.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-class0.conf:$(TARGET_OUT_VENDOR)/etc/thermal-india-class0.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-mgame.conf:$(TARGET_OUT_VENDOR)/etc/thermal-india-mgame.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-normal.conf:$(TARGET_OUT_VENDOR)/etc/thermal-india-normal.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-per-class0.conf:$(TARGET_OUT_VENDOR)/etc/thermal-india-per-class0.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-per-normal.conf:$(TARGET_OUT_VENDOR)/etc/thermal-india-per-normal.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-per-video.conf:$(TARGET_OUT_VENDOR)/etc/thermal-india-per-video.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-tgame.conf:$(TARGET_OUT_VENDOR)/etc/thermal-india-tgame.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-video.conf:$(TARGET_OUT_VENDOR)/etc/thermal-india-video.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-map-india.conf:$(TARGET_OUT_VENDOR)/etc/thermal-map-india.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-map.conf:$(TARGET_OUT_VENDOR)/etc/thermal-map.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-mgame.conf:$(TARGET_OUT_VENDOR)/etc/thermal-mgame.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-navigation.conf:$(TARGET_OUT_VENDOR)/etc/thermal-navigation.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-nolimits.conf:$(TARGET_OUT_VENDOR)/etc/thermal-nolimits.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-normal.conf:$(TARGET_OUT_VENDOR)/etc/thermal-normal.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-per-camera.conf:$(TARGET_OUT_VENDOR)/etc/thermal-per-camera.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-per-class0.conf:$(TARGET_OUT_VENDOR)/etc/thermal-per-class0.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-per-navigation.conf:$(TARGET_OUT_VENDOR)/etc/thermal-per-navigation.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-per-normal.conf:$(TARGET_OUT_VENDOR)/etc/thermal-per-normal.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-per-video.conf:$(TARGET_OUT_VENDOR)/etc/thermal-per-video.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-phone.conf:$(TARGET_OUT_VENDOR)/etc/thermal-phone.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-region-map.conf:$(TARGET_OUT_VENDOR)/etc/thermal-region-map.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_OUT_VENDOR)/etc/thermal-tgame.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-video.conf:$(TARGET_OUT_VENDOR)/etc/thermal-video.conf \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
@@ -239,6 +213,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_profiles_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kona.xml \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/perf/thermalboost.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/thermalboost.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
@@ -250,6 +225,33 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-class0.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-class0.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-mgame.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-normal.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-per-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-per-class0.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-per-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-per-normal.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-per-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-per-video.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-tgame.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-india-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-india-video.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-map-india.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map-india.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-mgame.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-navigation.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-navigation.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-per-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-per-camera.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-per-class0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-per-class0.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-per-navigation.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-per-navigation.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-per-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-per-normal.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-per-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-per-video.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-region-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-region-map.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermal-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-video.conf \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
@@ -306,7 +308,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
@@ -315,11 +316,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svarnn.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libcdsprpc_system.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc_system.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libdrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrc.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
@@ -366,7 +364,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssrec.so \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideooptfeature.so \
@@ -484,7 +481,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
-    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc_system.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libclient2slpi.notifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclient2slpi.notifier.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
@@ -637,6 +633,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/se_nq_extn_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/se_nq_extn_client.so \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
+    vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/unnhal-acc-adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-adreno.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hta.so \
@@ -728,7 +726,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0.so \
-    vendor/xiaomi/sm8250-common/proprietary/system/bin/chargeonlymode:$(TARGET_COPY_OUT_SYSTEM)/bin/chargeonlymode \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.qti.latency@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.1.so \
     vendor/xiaomi/sm8250-common/proprietary/vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so \
